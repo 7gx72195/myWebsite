@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,10 @@
   <script src="https://kit.fontawesome.com/cd51d51391.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
 </head>
 
 <body>
@@ -24,3 +28,18 @@
 </body>
 
 </html>
+
+
+<script>
+  function canvas() {
+
+    html2canvas(document.querySelector('.specific'), {
+      onrendered: function (canvas) {
+        // document.body.appendChild(canvas);
+        return Canvas2Image.saveAsPNG(canvas);
+      }
+    });
+
+
+  }
+</script>

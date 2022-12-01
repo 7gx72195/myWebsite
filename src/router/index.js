@@ -18,6 +18,11 @@ const routes = [
     component: () => import('../views/CLIView.vue')
   },
   {
+    path: '/VITE',
+    name: 'VITE',
+    component: () => import('../views/ViteView.vue')
+  },
+  {
     path: '/AXIOS',
     name: 'AXIOS',
     component: () => import('../views/axiosView.vue')
@@ -36,6 +41,11 @@ const routes = [
     path: '/TEXTPIC',
     name: 'TEXTPIC',
     component: () => import('../views/textPicView.vue')
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    component: () => import('../views/portfolioView.vue')
   }
 ]
 

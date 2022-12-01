@@ -1,17 +1,23 @@
 <template>
-  <nav>
+  <v-app style="background-color:#000000;color:#ffffff">
+    <!-- <div style="height:100px;background-color:#FFFFFF">
+      <div></div>
+    </div> -->
+  <nav >
     <router-link to="/">常用CSS</router-link>
     <router-link to="/JS">常用js</router-link>
     <router-link to="/CLI">VUE 設定</router-link>
+    <router-link to="/VITE">Vite 設定</router-link>
     <router-link to="/AXIOS">axios</router-link>
     <router-link to="/icon">icon</router-link>
     <router-link to="/jquery">jquery</router-link>
     <router-link to="/TEXTPIC">文字照片</router-link>
+    <router-link to="/portfolio">作品</router-link>
   </nav>
   <transition>
     <router-view />
   </transition>
-
+</v-app>
 </template>
 <script>
 export default {
@@ -31,9 +37,6 @@ export default {
 
 }
 
-body {
-  background: linear-gradient(to right, black, rgb(31, 31, 31));
-}
 
 ul {
   margin: 0;
